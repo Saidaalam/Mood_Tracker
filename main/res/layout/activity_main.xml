@@ -1,0 +1,94 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_img">
+
+    <!-- Mood Selection Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/holo_purple"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.9">
+
+        <Spinner
+            android:id="@+id/moodSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/moods_array"
+            android:background="?attr/selectableItemBackground"
+            android:paddingVertical="8dp" />
+    </LinearLayout>
+
+    <!-- Notes Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/holo_purple"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.9">
+
+        <EditText
+            android:id="@+id/notesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notes"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Mood"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="12dp"
+        android:minHeight="48dp" />
+
+    <!-- View History Button -->
+    <Button
+        android:id="@+id/viewHistoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View History"
+        android:layout_marginBottom="8dp"
+        android:paddingVertical="12dp"
+        android:minHeight="48dp" />
+
+    <!-- Share Button -->
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Mood"
+        android:paddingVertical="12dp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/openCameraButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Camera"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Open Map Button -->
+    <Button
+        android:id="@+id/openMapButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Map"
+        android:layout_marginBottom="8dp" />
+
+
+</LinearLayout>
